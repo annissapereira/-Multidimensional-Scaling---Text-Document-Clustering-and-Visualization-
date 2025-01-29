@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:azure;
+}
+
+.workspace {
+  margin: 10px;
+  width: 50%;
+  height: 600px;
+  border: 2px solid #ccc;
+  background-color: white;
+  flex-grow: 1;
+  position: relative; /* This is needed to make the SVG take up the full height of the .workspace div */
+}
+
+#fileList, #clusterList {
+  list-style-type: none;
+}
+
+.node-content {
+  overflow: auto;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  overflow: auto;
+  background-color: #f5f5f5;
+}
+
+#main {
+  margin-left: 210px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mds-plot {
+  position: fixed;
+  margin-right: 30px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40%; 
+  height: 60%;
+  border: 2px solid #ccc;
+  background-color: white; 
+}
+
+.highlight {
+  background-color: #75aae2; /* Change the background color to blue */
+  color: white; /* Change the text color to white */
+}
